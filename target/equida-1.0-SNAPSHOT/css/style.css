@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 22 sept. 2021, 08:13:32
+    Author     : HP-OMEN
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #323233;
+  color: #fff; }
+
+a {
+  color: #FFAD09; }
+
+.header {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header a {
+    color: #fff;
+    cursor: pointer; }
+    .header a:hover {
+      color: #FFAD09; }
+  .header nav a {
+    margin: 0px 25px; }
+  .header button {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background: #FFAD09;
+    border-radius: 0% 0% 0% 100%; }
+
+.top-right {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+.divider {
+  background: #FFAD09; }
+  .divider.big {
+    height: 5px;
+    width: 500px; }
+  .divider.round {
+    border-radius: 25%; }
+
+.hide {
+  display: none !important; }
+
+:root {
+  --transition: all 0.3s linear; }
+
+.close-btn {
+  margin-left: 10%;
+  font-size: 40px;
+  background: #323233;
+  border-color: #707070;
+  cursor: pointer;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
+
+.close-btn:hover {
+  color: #fff; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFAD09;
+  transition: var(--transition);
+  transform: translate(100%); }
+  .sidebar > .sidebar-header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #fff; }
+  .sidebar > .sidebar-body {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center; }
+    .sidebar > .sidebar-body > div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .sidebar > .sidebar-body > div > * {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center; }
+
+.sidebar.show {
+  transform: translate(0); }
+
+@media screen and (min-width: 676px) {
+  .sidebar {
+    width: 400px; } }
+
+/*# sourceMappingURL=style.css.map */
